@@ -1,0 +1,276 @@
+body {
+    background-color: hsl(185, 41%, 84%);
+    font-family: 'Space Mono';
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input {
+    border:none;
+    border-radius: 5px;
+    font-family: 'Space Mono';
+    font-size: 24px;
+    color: hsl(183, 100%, 15%);
+    text-align: right;
+    background-color: hsl(189, 41%, 97%);;
+    width: 95%;
+    padding-right: 15px;;
+    
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0px 0px 5px green;
+    border-color: hsl(183, 100%, 15%);
+}
+input:active {
+    
+    box-shadow: 0px 0px 5px green;
+}
+button {
+    //background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    
+    
+}
+
+
+button.percent {
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    border-radius: 5px;;
+}
+button:hover {
+    background-color: hsl(185, 41%, 84%);
+    color: hsl(183, 100%, 15%);
+}
+
+button:active {
+     background-color: hsl(184, 14%, 56%);
+}
+.card {
+    background-color: white;
+}
+
+@media only screen and (max-width: 875px) {
+    .logo{
+        margin: 50px;
+    }
+    .card {
+        width: 344px;
+        padding: 25px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+
+        p {
+            font-size: small;
+        }
+    }
+
+    .bill {
+        //background-color: red;
+        padding-bottom: 10px;;
+        input {
+            font-size: 24px;
+            
+            height: 2rem;
+            
+        }
+    }
+    
+    .tip {
+
+        padding-bottom: 1.5rem;
+        .percentage {
+            display:grid;
+            row-gap: 10px;
+            column-gap: 10px;
+            grid-template-columns: 10.4rem 10.4rem;
+
+            .percent {
+                //height: 1.5rem;
+                padding: 5px;
+            }
+
+            #custom {
+                width: 95%;
+            }
+
+            .active {
+                background-color: hsl(172, 67%, 45%);
+                color: hsl(183, 100%, 15%);
+            }
+        }
+    }
+
+    .people {
+        padding-bottom: 1.5rem;
+        
+        //background-color: red;
+    }
+
+    .summary {
+        background-color: hsl(183, 100%, 15%);
+        border-radius: 10px;
+        padding: 20px 15px 15px 15px;
+        .per-person {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 20px 10px;
+            //background-color: white;
+
+            .tip-label {
+                p {
+                    color:white;
+                    padding: 0;
+                    margin: 0;
+                }
+                .grayed {
+                    color: hsl(184, 14%, 56%);
+                }
+            }
+
+            .tip-amount {
+                color: hsl(172, 67%, 45%);
+                font-size: 32px;
+                position: relative;
+                bottom: 8px;
+            }
+            
+        }
+
+        .reset {
+            width: 90%;
+            height: 2.5rem;
+            position: relative;
+            left: 10px;
+            background-color: hsl(172, 67%, 45%);
+            border-radius: 5px;;
+        }
+
+    }
+
+}
+
+@media only screen and (min-width: 876px) {
+    .logo{
+        margin: 50px;
+    }
+    .card {
+        width: 875px;
+        display: flex;
+        justify-content: space-between;
+        padding: 25px;
+        border-radius: 20px;
+
+        p {
+            font-size: small;
+        }
+    }
+
+    .form {
+        padding-left: 15px;
+    }
+    .bill {
+        //background-color: red;
+        padding-bottom: 10px;;
+        input {
+            font-size: 24px;
+            
+            height: 2rem;
+            
+        }
+    }
+    
+    .tip {
+
+        padding-bottom: 1.5rem;
+        .percentage {
+            display:grid;
+            row-gap: 10px;
+            column-gap: 10px;
+            grid-template-columns: 8rem 8rem 8rem;
+
+            .percent {
+                //height: 1.5rem;
+                padding: 5px;
+            }
+
+            #custom {
+                width: 95%;
+            }
+
+            .active {
+                background-color: hsl(172, 67%, 45%);
+                color: hsl(183, 100%, 15%);
+            }
+        }
+    }
+
+    .people {
+        padding-bottom: 1.5rem;
+        
+        //background-color: red;
+    }
+
+    .summary {
+        background-color: hsl(183, 100%, 15%);
+        width: 380px;
+        border-radius: 10px;
+        padding: 20px 20px;
+        .per-person {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 40px 10px;
+            //background-color: white;
+
+            .tip-label {
+                p {
+                    color:white;
+                    padding: 0;
+                    margin: 0;
+                }
+                .grayed {
+                    color: hsl(184, 14%, 56%);
+                }
+            }
+
+            .tip-amount {
+                color: hsl(172, 67%, 45%);
+                font-size: 42px;
+                position: relative;
+                bottom: 12px;
+            }
+            
+        }
+
+        .reset {
+            width: 90%;
+            height: 2.5rem;
+            position: relative;
+            left: 16px;
+            top: 40px;
+            background-color: hsl(172, 67%, 45%);
+            border-radius: 5px;;
+        }
+
+    }
+
+}
